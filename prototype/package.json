@@ -1,0 +1,10 @@
+{
+  "name": "yun-tianming-storybook-prototype",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "start": "node server.mjs",
+    "test": "node --test tests/*.test.mjs",
+    "check": "node --check app.mjs && node --check model.mjs && node --check motion.mjs && node --check rig.mjs && node --check painting.mjs && node --check art.mjs && node --check server.mjs"
+  }
+}

@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#f1eee5">
+  <meta name="description" content="云天明的童话——旋伞、渡海与远近之间，三个可操作的水墨绘本片段。">
+  <title>云天明的童话 · 水墨互动绘本</title>
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body data-scene="cover">
+  <svg class="icon-defs" aria-hidden="true"><defs>
+    <symbol id="i-book" viewBox="0 0 24 24"><path d="M3 4h7c1.2 0 2 .6 2 1.6C12 4.6 13 4 14 4h7v15h-7c-1 0-2 .4-2 1-1-.6-1.5-1-3-1H3zM12 6v14"/></symbol>
+    <symbol id="i-bookmark" viewBox="0 0 24 24"><path d="M6 3h12v18l-6-4-6 4z"/></symbol>
+    <symbol id="i-pause" viewBox="0 0 24 24"><path d="M8 5v14M16 5v14"/></symbol>
+    <symbol id="i-replay" viewBox="0 0 24 24"><path d="M4 9a8 8 0 1 1 1 9M4 3v6h6"/></symbol>
+    <symbol id="i-sound" viewBox="0 0 24 24"><path d="M3 9h4l5-5v16l-5-5H3zM16 8q5 4 0 8M19 4q9 8 0 16"/></symbol>
+    <symbol id="i-next" viewBox="0 0 24 24"><path d="m9 4 8 8-8 8"/></symbol>
+  </defs></svg>
+
+  <section id="cover" aria-labelledby="cover-title">
+    <div class="cover-art" aria-hidden="true"></div>
+    <div class="cover-content">
+      <p class="eyebrow">一卷童话 · 三次亲历</p>
+      <h1 id="cover-title">云天明的童话</h1>
+      <p class="cover-lead">接过一把不能停的伞，<br>陪她走向故事之外。</p>
+      <button id="begin" class="primary">开始试读 <svg><use href="#i-next"/></svg></button>
+      <button id="resume-bookmark" class="text-button" hidden>从书签继续</button>
+      <p class="cover-footnote">水墨互动绘本 · 三个试作片段</p>
+    </div>
+    <div class="cover-index" aria-label="本次试读的片段"><span>01 接过黑伞</span><span>02 渡过饕餮海</span><span>03 远近之间</span></div>
+  </section>
+
+  <main id="reader" hidden>
+    <header class="reader-header">
+      <button id="home" class="wordmark" aria-label="返回封面">云天明的童话</button>
+      <span id="chapter-label" class="chapter-label">第一片段 · 接过黑伞</span>
+      <nav class="reader-tools" aria-label="阅读工具">
+        <button id="contents-toggle" class="icon-button" aria-label="片段目录" aria-expanded="false"><svg><use href="#i-book"/></svg></button>
+        <button id="bookmark" class="icon-button" aria-label="在此页留下书签" aria-pressed="false"><svg><use href="#i-bookmark"/></svg></button>
+        <button id="sound-toggle" class="icon-button" aria-label="开启声音" aria-pressed="false"><svg><use href="#i-sound"/></svg></button>
+        <button id="pause-toggle" class="icon-button" aria-label="暂停故事" aria-pressed="false"><svg><use href="#i-pause"/></svg></button>
+      </nav>
+    </header>
+
+    <section id="stage" class="stage" aria-label="互动绘本场景" tabindex="-1" data-phase="handoff">
+      <div id="stage-inner" class="stage-inner" aria-hidden="true">
+        <canvas id="painting" width="1440" height="810"></canvas>
+      </div>
+
+      <div id="narrative" class="narrative">
+        <p id="role" class="role">你是宽姨</p>
+        <h2 id="scene-title">接过黑伞</h2>
+        <span class="ink-dash" aria-hidden="true"></span>
+        <p id="story-copy" class="story-copy">空灵把黑伞交到你手里。<br>公主还在伞下，不能让它停。</p>
+        <p id="interaction-hint" class="interaction-hint">接住之后，沿伞面周围持续绕圈拖动。</p>
+      </div>
+
+      <button id="take-umbrella" class="paint-action" aria-label="接住伞柄"><span class="action-copy">接住伞柄</span><span class="action-mark" aria-hidden="true">↗</span></button>
+      <button id="approach-water" class="paint-action" aria-label="把剑探向海面" hidden><span class="action-copy">把剑探向海面</span><span class="action-mark" aria-hidden="true">↘</span></button>
+      <div id="live-caption" class="live-caption"><p id="story-status" role="status" aria-live="polite"></p>
+        <div id="scene-actions" class="scene-actions">
+          <button id="spin-assist" class="text-button hold-button" hidden>按住辅助转伞</button>
+          <button id="dip-assist" class="text-button hold-button" hidden>向下拖动香皂 · 或按住此处浸入水中</button>
+          <button id="retry-scene" class="text-button" hidden><svg><use href="#i-replay"/></svg>再接一次</button>
+        </div>
+      </div>
+
+      <button id="spin-target" class="art-target spin-target" aria-label="绕伞面拖动，持续旋转黑伞" hidden><span class="sr-only">也可按住空格，维持旋转</span></button>
+      <button id="soap-target" class="art-target soap-target" aria-label="拖动香皂向下，放入海水" hidden><span class="soap-bar"></span><span class="soap-stem"></span><span class="soap-ring"></span></button>
+
+      <div id="walk-control" class="walk-control" hidden>
+        <div class="walk-captions"><span>远处</span><span>沿海岸走近，再走回来</span><span>近处</span></div>
+        <input id="observer-position" type="range" min="0" max="100" value="0" aria-label="长帆的观察位置">
+        <div class="walk-buttons"><button id="walk-away" class="text-button">← 走远</button><button id="walk-near" class="text-button">走近 →</button></div>
+      </div>
+
+      <div id="pause-overlay" class="pause-overlay" hidden><p>故事停在这一页</p><button id="resume" class="outline">继续</button></div>
+    </section>
+
+    <footer class="reader-footer">
+      <button id="previous" class="icon-button previous" aria-label="上一片段"><svg><use href="#i-next"/></svg></button>
+      <div class="book-progress" aria-label="试读进度"><span id="book-progress-fill"></span></div>
+      <span id="page-count" class="page-count">01 / 03</span>
+      <button id="replay" class="text-button footer-replay"><svg><use href="#i-replay"/></svg>重读此段</button>
+      <button id="next" class="next-button" disabled>下一片段 <svg><use href="#i-next"/></svg></button>
+    </footer>
+  </main>
+
+  <aside id="contents" class="contents" aria-label="试读片段目录" hidden>
+    <div class="contents-heading"><span>这一卷童话</span><button id="close-contents" class="icon-button" aria-label="关闭目录">×</button></div>
+    <button data-go="0"><span>01</span><strong>接过黑伞</strong><small>宽姨 · 维持旋转</small></button>
+    <button data-go="1"><span>02</span><strong>渡过饕餮海</strong><small>露珠 · 香皂入水</small></button>
+    <button data-go="2"><span>03</span><strong>远近之间</strong><small>长帆 · 改变视点</small></button>
+  </aside>
+
+  <dialog id="ending"><p class="eyebrow">三个片段 · 暂停在这里</p><h2>童话，因你向前了一点。</h2><p>你撑住了伞，陪她渡海，<br>也亲眼遇见了不合常理的远近。</p><button id="ending-replay" class="outline">再翻一遍</button><button id="ending-close" class="text-button">留在这一页</button></dialog>
+  <div id="toast" class="toast" role="status" hidden></div>
+  <script type="module" src="./app.mjs"></script>
+</body>
+</html>

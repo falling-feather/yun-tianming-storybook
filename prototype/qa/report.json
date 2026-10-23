@@ -1,0 +1,103 @@
+{
+  "date": "2026-10-21",
+  "focus": "完整原画与剑尖特写重做渡海",
+  "scope": "渡海重做；接伞与王子远近规则回归",
+  "checks": {
+    "pointerDip": {
+      "foam": 0.095,
+      "phase": "dipping"
+    },
+    "keyboardDip": {
+      "foam": 0.824,
+      "phase": "dipping"
+    },
+    "pausedBefore": {
+      "age": "35.044",
+      "foam": "0.804"
+    },
+    "pausedAfter": {
+      "age": "35.044",
+      "foam": "0.804"
+    },
+    "pauseFrozen": true,
+    "departure": {
+      "foam": 0.673,
+      "phase": "departing"
+    },
+    "complete": {
+      "foam": 0.493,
+      "phase": "complete"
+    },
+    "mobileOpening": {
+      "scrollWidth": 390,
+      "width": 390
+    },
+    "mobileTarget": {
+      "height": 156.2916717529297,
+      "width": 187.55209350585935,
+      "x": 183.015625,
+      "y": 328.21875
+    },
+    "mobilePointer": {
+      "foam": 0.093,
+      "phase": "dipping"
+    },
+    "umbrella": {
+      "open": 1,
+      "phase": "complete",
+      "transfer": 1
+    },
+    "princeFar": {
+      "ordinary": 37.6,
+      "prince": 225.6
+    },
+    "princeNear": {
+      "ordinary": 225.6,
+      "position": 1,
+      "prince": 225.6
+    },
+    "ending": true,
+    "replay": {
+      "foam": 0,
+      "phase": "waiting"
+    },
+    "runtimeErrors": 0
+  },
+  "artifacts": [
+    "voyage-opening.png",
+    "voyage-detail-dry.png",
+    "voyage-detail-wet.png",
+    "voyage-departure.png",
+    "voyage-arrival.png",
+    "voyage-mobile-opening.png",
+    "voyage-mobile.png"
+  ],
+  "automated": {
+    "testsPassed": 25,
+    "testsFailed": 0,
+    "syntaxModules": 7,
+    "documentErrors": 0,
+    "documentWarnings": 0
+  },
+  "unverified": [
+    "用户对美术和叙事节奏的认可",
+    "完整人物表演及逐帧表情",
+    "实体手机触感与性能",
+    "全篇叙事和原文逐句校勘"
+  ],
+  "viewport": {
+    "width": 1280,
+    "height": 720
+  },
+  "source_sha256": {
+    "app.mjs": "9c5b93dd772b224580e53ff31278927f4d8bee7abad6f802c0eff9780d051349",
+    "model.mjs": "fd5cc80f55ec0ac3fd7ba4a17cc82261884c11c27b76161f50367a4dccee3e80",
+    "motion.mjs": "2ff54e1373bd71ecae6e7b41003326fe37d8ba78f245f3430061f4bb4a4561b1",
+    "rig.mjs": "48927dd27e34a1ba71e9aaa0bec08a41435a9b28c36fefb0c3e7738981b8bf36",
+    "painting.mjs": "8a6c94b8302c584c89cd7590d26020ffe4909670ade17cca6775cba0bc1b6061",
+    "art.mjs": "f6fe42ea193e36a7df93cf89e8738567deddabef56142669f6fb9d070fcea958",
+    "styles.css": "f52fa9914d52ac855ae04f30cad07d340f684b62c66770bfb899947d347fb569",
+    "index.html": "2b78b6afe20690481dfb64e272c5738b74ec1d2d3d66bc124dcd80d252d2f9ec",
+    "server.mjs": "e89245b25b5af3567851f4523650a2681f07be106fac782724a614da10b755d5"
+  }
+}

@@ -1,0 +1,198 @@
+{
+  "date": "2026-10-21",
+  "purpose": "重做渡海样段：完整人物与船原画、剑尖特写及触水后的连续反馈",
+  "tool": "image_gen.imagegen（内置）",
+  "reference": "style-reference.png（本轮用户提供并确认）",
+  "frame_definitions": "../art.mjs",
+  "notes": "渡海使用完整人物与船的一体原画，取消独立袖片、前臂、手掌和划桨循环；特写只呈现同一刚性剑身及香皂。接伞沿用完整人物蒙皮。旧分肢图集仅保留生成历史，已从运行加载与帧定义中移除。正文为改编演示转述，未完成逐句原文校勘。",
+  "files": [
+    {
+      "file": "voyage-water-close.png",
+      "size": [
+        1672,
+        941
+      ],
+      "mode": "RGB",
+      "sha256": "faaa6fa4ccc3aacf1f16923de4810e9c25144b04a6172ed1d71877f8b9ad3150"
+    },
+    {
+      "file": "voyage-sea.png",
+      "size": [
+        1672,
+        941
+      ],
+      "mode": "RGB",
+      "sha256": "b63b5b00c014f6c304a6d108c8c0322f5b232b775f7e0bb57ccc4bf617fb7871"
+    },
+    {
+      "file": "voyage-sword.png",
+      "size": [
+        1536,
+        1024
+      ],
+      "mode": "RGBA",
+      "sha256": "43476faea4536b9be1cc3ad04d4ddfa820a10bb3c764675d55136c07371654d7"
+    },
+    {
+      "file": "voyage-travelers.png",
+      "size": [
+        1536,
+        1024
+      ],
+      "mode": "RGBA",
+      "sha256": "58b3f3b3cc09d50064f068e1fcaf6f709f79459a9884fc9de679f40fd201c5ab"
+    },
+    {
+      "file": "backgrounds.png",
+      "size": [
+        1672,
+        941
+      ],
+      "mode": "RGB",
+      "sha256": "0a120348a1c84be87cd0c24bb07520ffa4cbfd47510c7e83159c14a8b50d98fc"
+    },
+    {
+      "file": "characters.png",
+      "size": [
+        1774,
+        887
+      ],
+      "mode": "RGBA",
+      "sha256": "9b97f0206d52eb265d0d41e3bd6d2cdcbb0f626bf51b03da4b5dffd9f4828d2d"
+    },
+    {
+      "file": "style-reference.png",
+      "size": [
+        1672,
+        940
+      ],
+      "mode": "RGB",
+      "sha256": "667e7ad18adbcb5d0513c8556952645b3103fdec4082eec000d15357efa7781c"
+    },
+    {
+      "file": "tree.png",
+      "size": [
+        1254,
+        1254
+      ],
+      "mode": "RGBA",
+      "sha256": "4fcc8ccf7f81fd4b95b83534ad5dc1ec60faf84e9ad134d01ee3913a87f53c04"
+    },
+    {
+      "file": "living-bodies.png",
+      "size": [
+        1774,
+        887
+      ],
+      "mode": "RGBA",
+      "sha256": "294befe80ad9a24b8e65893c83ee5ab38ebf3282be957632aaa718eee284603d"
+    },
+    {
+      "file": "living-arms.png",
+      "size": [
+        1536,
+        1024
+      ],
+      "mode": "RGBA",
+      "sha256": "a1f083ea48a358f7c64196c98fb713ee442950d15aa4f30e5cb03a8557f35623"
+    },
+    {
+      "file": "living-props.png",
+      "size": [
+        1254,
+        1254
+      ],
+      "mode": "RGBA",
+      "sha256": "cbd4474b5bd182e742703a464920c3a7c361d1bbd70988ab04a17899e40ecfbc"
+    },
+    {
+      "file": "living-princess.png",
+      "size": [
+        1536,
+        1024
+      ],
+      "mode": "RGBA",
+      "sha256": "e24abda48e8a53dd8cf3e2e02ece2522e82e1cc1240e5bef1a67b9efe285218b"
+    },
+    {
+      "file": "connected-cast.png",
+      "size": [
+        1536,
+        1024
+      ],
+      "mode": "RGBA",
+      "sha256": "949cad9b703636b78f56b978f015c9b15d2f86b09ad8a5003c03cdc4a36432d0"
+    }
+  ],
+  "generations": [
+    {
+      "date": "2026-10-21",
+      "output": "voyage-water-close.png",
+      "transparent_background": false,
+      "prompt": "Use case: illustration-story, style-transfer. Input: voyage-sea.png is the exact ink-wash palette and texture reference. Paint a NEW matching EXTREME CLOSE-UP looking obliquely down at a patch of dark mineral-blue sea beside a tiny rowboat, for an interactive storybook. Landscape 16:9. The ENTIRE frame is the WATER SURFACE viewed from close above: no horizon, no sky, no coast, no boat, no people, no objects. Small-scale delicate overlapping ripples and scattered thin off-white dry-brush foam at the periphery. Keep the center and right-center fairly open deep translucent petrol-blue water so newly generated interactive foam and fish shadows can be seen clearly. Fine mottled watercolor pigment, hand-drawn irregular ink currents, subtle warmer paper grain, reflected cool daylight, serious literary fairy-tale mood. Flat continuous coherent surface with modest low ripples, NOT huge waves, NOT a waterfall, NOT mountainous water, NOT photorealistic. NO fish silhouettes, NO sword, NO soap, NO letters, NO border. Dark enough for ivory foam to contrast, but preserve blue midtones and subtle transparent water depth."
+    },
+    {
+      "date": "2026-10-21",
+      "output": "voyage-sea.png",
+      "transparent_background": false,
+      "prompt": "Use case: illustration-story. Asset: a full-bleed background painting for a literary Chinese ink-wash interactive picture book, landscape 16:9, no text. Paint a threatening northern sea in desaturated mineral blue, charcoal ink, warm ivory rice-paper grain, refined hand-drawn European fairy-tale atmosphere matching a muted ink-and-watercolor graphic novel. Composition: low eye-level view from a tiny boat, horizon about 40% from top; pale misty open sky at upper left leaves restful negative space; distant dark rocky grave island and a few tall weathered stone silhouettes at far upper right; textured rolling dark blue water fills bottom 55%, pale foam edges, tiny foreground underwater fish shadows. Soft overcast light, restrained detail, spacious atmospheric perspective, visible dry-brush edges. NO boats, NO people, NO umbrellas, NO swords, NO panels, NO type, NO border. One continuous cinematic painting, not a collage, not photorealism."
+    },
+    {
+      "date": "2026-10-21",
+      "output": "voyage-travelers.png",
+      "transparent_background": true,
+      "prompt": "Use case: identity-preserve / illustration-story. Input images: characters.png preserves the EXACT character designs; style-reference.png is the palette and ink-wash medium reference. Repaint the three travelers together inside ONE coherent small weathered wooden rowboat, viewed three-quarter side, bow pointing right. Output ONE complete unified illustration on a genuinely transparent background with generous empty transparent margins; entire hull, umbrella, characters, oar and sword remain within image bounds. Keep anatomically correct natural seated bodies and integral arms/hands, consistent scale and perspective, no disconnected parts. Left at stern: Chang Fan, lean young man with messy dark hair, grey linen shirt and brown strap; sits quietly with BOTH hands naturally resting on a single wooden oar across his lap; oar is at rest, not a rowing pose, not in water. Center: stout kindly older Auntie, grey bun, dark patterned shawl, one natural arm holds a black open umbrella above herself and the princess, umbrella rim has subtle painted circular ink traces suggesting rotation. Right at bow: Princess Dewdrop, long braided dark hair, mineral-blue cape, ivory dress; leans slightly toward the sea with both hands naturally together on the hilt of ONE slender straight sword pointing diagonally down-right outside the hull. One small ivory soap block sits on sword tip. Show hands, wrists, elbows and shoulders correctly connected as part of each complete person. Hull conceals legs naturally. Serious, quiet, poetic mood, ink wash with finely drawn expressive faces and rice-paper watercolor texture, palette warm paper, black ink, muted mineral blue. NO sea, NO ground, NO backdrop, NO text, NO separated body parts, NO sprite sheet. ONE coherent painted scene cutout, no modular limbs."
+    },
+    {
+      "date": "2026-10-21",
+      "output": "voyage-sword.png",
+      "transparent_background": true,
+      "prompt": "Use case: illustration-story. Generate ONE transparent foreground illustration for an extreme close-up in a muted Chinese ink-wash fairy-tale picture book. Subject ONLY a single long thin straight grey-steel sword blade entering from beyond the upper-left edge, ending at lower-right with ONE small ivory soap block fitted over the blade tip. No hand, no person, no hilt visible: these all remain OUTSIDE this extreme close-up frame. Blade is extremely slender and elegant, diagonal about 27 degrees down-right, soap is a small hand-carved slightly rounded rectangular block, about 8% of image width, delicately irregular ink edges, softly mineral-blue reflections, warm ivory soap. Entire visible sword and soap form ONE rigid unit. Transparent background, landscape 3:2, generous empty space below and to right. Transparent outside painted object, not a black or white backdrop. Hand-drawn ink outlines, subtle watercolor grain, no glow, no text, no water, no UI, no extra objects. Keep sword geometrically straight and soap clearly distinguishable."
+    },
+    {
+      "output": "characters.png",
+      "transparent_background": true,
+      "prompt": "Use case: stylized-concept. Derive a GAME SPRITE ATLAS from the supplied approved watercolor/Chinese ink fairy-tale art-direction image. Preserve its characters, clothing, expressive ink edges, fine hand-drawn outlines, warm gray shadows and muted mineral blue. This is for a layered interactive illustrated storybook, not a new scene or a UI screenshot.\nOutput ONE landscape 2:1 PNG with a GENUINELY TRANSPARENT BACKGROUND and a STRICT 4-COLUMN by 2-ROW grid of EIGHT EQUAL SQUARE cells. Each subject is isolated entirely within its own square with generous transparent padding, no elements crossing cell boundaries. NO grid lines, NO captions, NO paper rectangle, NO ground rectangles, NO title, NO color swatches, NO watermark. Subjects' feet near the lower center of their cell. Full bodies fit inside their cells. Clean edges and usable transparency.\nTOP ROW left to right:\n1. Princess Dewdrop: young adult woman with a dark loose braid, pale ankle-length dress, muted blue cloak and small brooch, three-quarter view facing right, curious determined expression, hands calmly in front.\n2. Auntie Wide: broad older woman with gray hair in a bun and charcoal shawl over a gray practical long dress, full body three-quarter facing left. One hand raised to shoulder height holding a straight slender vertical umbrella HANDLE only, with the bare shaft extending above her. NO UMBRELLA CANOPY because it will be animated separately.\n3. Master Ethereal: elderly painter with long white hair and white beard, modest loose gray coat, warm serious face, full body facing right, right hand extended as if handing over an umbrella. NO umbrella or other large object.\n4. Captain Long-Sail: lean athletic adult guard with wavy dark hair, light-gray belted tunic, dark boots and a sheathed sword, full body facing left, calm watchful pose. Based on the guard in the reference.\nBOTTOM ROW left to right:\n5. Prince Deep Water: sturdy adult man with shoulder-length dark hair, simple pale gray tunic, muted blue sash, dark boots, full body facing three-quarter left, relaxed broad stance. Ordinary adult proportions, no crown, no giant anatomy.\n6. A complete SMALL WOODEN BOAT with exactly the same three passengers princess, caretaker and captain: side three-quarter view, bow pointing right, princess toward the front in blue cloak, broad older caretaker behind her holding the bare umbrella SHAFT with NO canopy, captain at the rear with oars. The boat, passengers and oars entirely inside this one cell, no water or wake, transparent around it.\n7. A wind-shaped coastal TREE growing from a small weathered rock base, fine ink foliage with gray-green accents, full tree isolated.\n8. A low natural ROCKY ISLAND with a few sparse grasses, ink gray with a tiny blue-gray wash, isolated transparent silhouette, no building.\nIMPORTANT: Eight cells exactly in the stated row-major order. The overall image has transparent alpha, not white or checkerboard painted in. Original designs, no anime, no 3D."
+    },
+    {
+      "output": "backgrounds.png",
+      "transparent_background": false,
+      "prompt": "Use case: stylized-concept. Derive a BACKGROUND ATLAS for a layered Chinese ink-wash interactive storybook from the supplied approved art-direction board. The reference controls paper, brushwork, subdued mineral blue, atmospheric stone architecture and restrained fantasy tone. Remove ALL characters, UI, titles and text from this output.\nONE landscape 16:9 image, organized as a STRICT 2-COLUMN by 2-ROW grid of FOUR EQUAL rectangular 16:9 panels, touching edge to edge with no borders or gaps. These four panels will be displayed separately through CSS; each panel is one usable environment. No subject crossing panel boundaries. No labels, no frame, no page numbers.\nUPPER LEFT panel: a quiet dim stone palace corridor at dusk, simple arches and a doorway in the far right, sparse hanging drapery, open warm pale stone floor across the bottom third where full-body characters will stand. Warm ivory negative space on the leftmost quarter for readable text. Several layers of receding arches toward the right, ink-blue shadow, a small warm light through the exit. NO people, paintings with people, umbrella or props in the foreground.\nUPPER RIGHT panel: broad open ink-dark sea, low natural rocky Tomb Island in the far right distance with some pale mist, large quiet ivory sky, a clean light horizon. The leftmost quarter fades to ivory for reading text; middle and lower right have expressive dark water with subtle blue washes. No castle, bridge, boats, people, fish, white wake or umbrella: those are separate moving layers.\nLOWER LEFT panel: coastal island ground for a perspective anomaly scene. Low flat rocky ground across the lower quarter, misty sea and mountains beyond, warm pale sky, light ink-brush rocks and sparse grasses. All ground centered toward the right where characters will stand. NO tree or people; tree and figures will be separate layers. Leftmost quarter is almost blank ivory. A calm spatial stage with clear horizon.\nLOWER RIGHT panel: a minimal warm ivory paper field with pale gray-blue mist brushes along the lower and far right edges; a quiet neutral reusable atmosphere with lots of blank space.\nMaintain style of refined dry-brush and ink wash, large readable forms rather than dense photographic details, slight natural paper grain. No glossy 3D, anime, East Asian imperial palace, red pagodas, text, figures, props or watermark."
+    },
+    {
+      "output": "tree.png",
+      "transparent_background": true,
+      "prompt": "Use case: background-extraction / precise-object-edit. The supplied image is a transparent sprite atlas. Extract and redraw ONLY the wind-shaped coastal tree in the bottom row, third item from the left, into ONE standalone square transparent PNG. Keep the exact ink-wash illustration style, muted gray-green foliage, crooked trunk, and natural low rocky roots. Show the COMPLETE tree and its rocky root base with all outer foliage naturally intact. Generous transparent padding around the entire tree. Remove EVERY other subject: no people, no boat, no oar, no detached boat fragments, no adjacent island, no hard rectangular crop edge, no text or labels. Genuinely transparent alpha, not white, checkerboard or paper background. This is a clean reusable sprite for an interactive watercolor storybook. Preserve hand-painted dry-brush edges and the mineral-blue/ink-gray family of the original."
+    },
+    {
+      "date": "2026-10-19",
+      "output": "living-bodies.png",
+      "transparent_background": true,
+      "prompt": "Use case: stylized-concept, animation puppet asset preparation. From the approved ink-and-watercolor storybook reference, make ONE transparent PNG sprite sheet, LANDSCAPE 2:1, TWO EQUAL SQUARE CELLS side by side, no labels or dividing lines. Keep the reference's mature painterly human proportions, fine ink brush edges, muted mineral blue, charcoal gray cloth, warm skin, expressive kind faces. These are layered puppet BODIES; the near arms will be separate assets.\nLEFT cell: Master Ethereal, elderly man with long white hair and beard, layered loose gray painter's robe, three-quarter facing RIGHT, full body, feet visible near bottom. Calm serious face, slight forward inclination. His NEAR RIGHT ARM is hidden behind the robe at the shoulder, so there is NO outstretched arm or hand on the image-right side; leave a natural rounded clothed shoulder cap for adding a separate animated sleeve. The far arm rests subtly at his waist.\nRIGHT cell: Auntie Wide, broad older woman with gray bun, charcoal patterned shawl and a practical gray full dress, full body, three-quarter facing LEFT toward the painter. Her NEAR RIGHT ARM (image-left side) is behind the shawl, leaving a natural clothed shoulder cap; no raised arm, hand, umbrella handle or stick on image-left. The far hand can rest at her waist. Maintain her recognizable broad silhouette and warm, focused face.\nNo severed anatomy, these are clothed layered animation assets. Each full body stays entirely inside its own square with at least 6% transparent margins, no overlap between cells. No umbrella, props, palace, paper background, shadows on a floor, typography, UI or watermarks. Genuine transparent alpha."
+    },
+    {
+      "date": "2026-10-19",
+      "output": "living-arms.png",
+      "transparent_background": true,
+      "prompt": "Use case: stylized-concept, rig-ready painted limb assets. Make ONE transparent LANDSCAPE 3:2 PNG sprite atlas with a STRICT grid of THREE COLUMNS and TWO ROWS, six equal square cells. Original ink-and-watercolor sleeve and hand pieces MATCHING the provided character/style reference. No text, no grid lines, no full people, no paper background. Every component entirely inside its own cell with large transparent margins. ALL PIECES are oriented horizontally from LEFT joint to RIGHT joint, in the middle of their square.\nTOP ROW, left to right:\n1. Master painter's UPPER ARM SLEEVE: soft light gray loose robe fabric, left end shoulder, right end elbow, broad rounded joins, painted folds. No forearm or hand.\n2. Auntie Wide's UPPER ARM SLEEVE: charcoal gray patterned cloth matching her shawl, left shoulder to right elbow, rounded joins. No hand.\n3. Captain Long-Sail's UPPER ARM: gray rolled sleeve and a little exposed upper arm, left shoulder to right elbow. No hand.\nBOTTOM ROW, left to right:\n4. Master painter's FOREARM AND HAND: light gray long sleeve starting at the left elbow, aged warm hand at right, fingers gently curled around an imaginary vertical narrow handle; no actual stick. \n5. Auntie Wide's FOREARM AND HAND: charcoal sleeve at left elbow, strong older woman's warm hand at right, fingers gripping an imaginary vertical handle, no actual stick.\n6. Captain Long-Sail's FOREARM AND HAND: bare adult male forearm from left elbow, subtly strong hand at right gripping an imaginary oar shaft, no actual oar.\nThese are overlapping clothed 2D puppet parts, no injured or severed anatomy. Real painterly volume, gentle edge feathering, no glossy 3D, anime, hard vector outlines, floating fingertips or extra limbs. Genuine transparent alpha."
+    },
+    {
+      "date": "2026-10-19",
+      "output": "living-props.png",
+      "transparent_background": true,
+      "prompt": "Use case: stylized-concept, separate illustrated props for a layered ink storybook. Create ONE SQUARE transparent PNG sprite sheet in a strict TWO BY TWO grid, four equal square cells, each asset fully contained with generous clear margins. Match the approved reference's warm gray, muted blue-black ink, delicate dry-brush edges and hand-painted watercolor volume.\nTOP LEFT: a single BLACK UMBRELLA CANOPY viewed EXACTLY FROM ABOVE, a complete near-circular radial cloth surface with eight subtly painted ribs, dark ink folds, irregular scalloped brush edge. No perspective ellipse, no shaft, no handle, no surrounding objects. This is a circular cloth texture to be mapped onto animated 3D cone geometry, so top-down symmetry and a clear central tip are essential. Painterly, not a crisp vector fan.\nTOP RIGHT: an EMPTY small wooden rowing BOAT, side three-quarter view, bow pointing right. Visible inside bench seats and weathered wood grain, two gunwales, original reference boat shape. NO people, umbrella, oars, water or shadow background.\nBOTTOM LEFT: the foreground FRONT HULL SIDE of that SAME boat, including near gunwale and curved bow, seen from the same angle, as a separate occlusion layer. The interior and back edge are transparent so seated figures can be placed behind this near side. No passengers or other objects.\nBOTTOM RIGHT: ONE wooden OAR, nearly horizontal, narrow grip at LEFT and broad paddle at RIGHT, worn warm gray-brown wood and ink edges. No hands or water.\nOnly these four props; no captions, grid borders, logos, baked checkerboard or paper. Genuine transparent alpha."
+    },
+    {
+      "date": "2026-10-19",
+      "output": "living-princess.png",
+      "transparent_background": true,
+      "prompt": "Create a transparent-background 2D cutout animation asset sheet, same hand-painted ink and watercolor storybook style as attached references, cream dry-brush paint, desaturated mineral-blue cloak and black ink drawing. Reference characters.png contains our Princess Dewdrop, the very first woman at far left top row; match her black loosely braided hair, youthful Chinese features, pale white layered dress, mineral blue windblown cape and brown boots. The sheet must have exactly THREE isolated separate components, no text, no grid lines, no ground or shadows. Layout strict 3 equal columns with generous empty alpha spacing. LEFT COLUMN: full body princess, three-quarter profile facing RIGHT, standing gracefully, entire boots visible, far arm at waist mostly covered, the NEAR ARM COMPLETELY HIDDEN UNDER CLOAK, no visible near hand or extended arm. Cloak hangs open slightly to right shoulder, ready for separate animation arm, retaining long cloth edges trailing left. MIDDLE COLUMN: isolated RIGHT UPPER ARM segment for this princess, white linen sleeve with a small blue cape edge overlapping shoulder at far left, horizontal rest pose from shoulder at LEFT to elbow at RIGHT, a simple gently hanging tapered sleeve, no hand, no body. RIGHT COLUMN: isolated RIGHT FOREARM AND HAND, matching white sleeve starts at LEFT elbow to slender pale hand at RIGHT, fingers closed gently around an invisible VERTICAL sword handle, hand viewed in three-quarter side profile, thumb visible, no sword. Match existing living-arms reference method but princess arm is slender and white, not wide men's gray sleeves. The hand must be natural 5 fingers, clean wrist connection. Each arm segment approximately 400x260 and horizontally centered in its own column near midheight. Full body at left approx 430x900. True clean RGBA transparency surrounding each component, no gray/black backing glows, no paper rectangle, no props. High quality painterly texture inside silhouettes, fine charcoal lines. Keep all painted artwork away from column boundaries."
+    },
+    {
+      "date": "2026-10-20",
+      "output": "connected-cast.png",
+      "transparent_background": true,
+      "prompt": "Use case: illustration-story.\nAsset type: ONE transparent 2D animation source sheet with TWO COMPLETE CONNECTED CHARACTERS, full body including naturally attached arms and hands. These whole drawings will be skinned as continuous meshes; do NOT draw separate limb parts.\nInput images: Image 1 is the approved Chinese-ink/watercolor storybook art direction; image 2 identifies the elderly painter and Auntie Wide. Match their faces, clothes and restrained mineral-blue/charcoal/ivory palette.\nComposition: landscape 3:2 or 2:1 canvas, exactly TWO widely separated full-body figures, one in each half. Keep every part comfortably inside its half, generous transparent padding. Bare transparent background, NO paper panels, NO props, NO scenery, NO letters or anatomical markers.\nLEFT: the tall elderly painter with loose white hair, white beard, gray linen robe and charcoal shoulder mantle, facing RIGHT in three-quarter profile. He is OFFERING an invisible thin umbrella handle. His NEAR shoulder, upper arm, elbow, forearm and gripping hand must form ONE anatomically natural connected arm. Upper arm slopes down-right from his shoulder, ELBOW LOW near waist; forearm reaches forward-right and gently UP to hand around lower-chest height. Thumb uppermost and fingers naturally curved around an invisible nearly vertical shaft. The reaching forearm and hand are OUTSIDE the torso silhouette to the right, with clear transparent negative space underneath. The opposite arm and its hand stay resting at his waist. Slight forward body weight, calm serious face. No detached shoulder or giant balloon sleeve.\nRIGHT: broad older Auntie Wide, gray hair bun, warm expressive face, black fringed shawl over a practical gray dress, facing LEFT toward the painter in three-quarter view. She reaches out with her NEAR arm to RECEIVE an invisible umbrella handle. Visible near shoulder at left edge of chest, upper arm slopes down-left, ELBOW LOW; forearm reaches LEFT and gently UP, fist at lower-chest height, thumb uppermost, fingers wrapped around an invisible shaft. Shoulder, sleeve, elbow, cuff and hand must be anatomically continuous and proportionate. The forearm and hand lie clearly to the LEFT outside her torso silhouette, not across her face or belly. Far hand rests on her waist on the right. Slight forward lean, secure stance on both feet.\nBoth figures: one near arm and one far arm only, five fingers, accurate shoulder attachment, correct elbow direction, wrist aligned with forearm, continuous cloth and ink contours. Same eye-level perspective and soft light. Thin expressive charcoal linework, pigment pooling and dry-brush edges, refined illustrated book painting. Keep shawl/dress quiet around shoulder to make connected anatomy readable. Avoid cutout puppet joints, flat detached sleeve pieces, glossy 3D, photoreal skin, extra arms, umbrellas or poles. Do not crop head, feet or extended fingers. True RGBA transparency."
+    }
+  ]
+}
